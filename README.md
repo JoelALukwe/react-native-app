@@ -1,11 +1,4 @@
-
-Certainly! Here's a complete README file for your project:
-
----
-
 Utibu Health Mobile App
-
-Overview
 
 Utibu Health is a mobile application designed to allow registered customers to conveniently order medication remotely from Utibu Health facilities. The app enables users to make medication orders, track order status, and view order history. It also provides notifications for important updates regarding orders.
 
