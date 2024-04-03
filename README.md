@@ -1,85 +1,65 @@
 
-Utibu Health Mobile Ordering System
+Certainly! Here's a complete README file for your project:
 
 ---
 
-Overview:
+Utibu Health Mobile App
 
-Utibu Health Mobile Ordering System is a user-friendly solution designed to allow registered customers of Utibu Health to conveniently order their medications remotely via a mobile application. This system aims to streamline the ordering process for patients with chronic conditions such as HIV, diabetes, and hypertension, enabling them to refill prescriptions and manage their medication needs with ease.
+Overview
 
----
+Utibu Health is a mobile application designed to allow registered customers to conveniently order medication remotely from Utibu Health facilities. The app enables users to make medication orders, track order status, and view order history. It also provides notifications for important updates regarding orders.
 
-Features:
+Features
 
-1. Medication Inventory: Access an extensive inventory of medications available at Utibu Health, including stock levels and details.
+- Medication Ordering: Users can easily place orders for their required medications through the app.
+- Order Tracking: Users can track the status of their medication orders and view their order history.
+- Notifications: Push notifications are sent to users to keep them updated on order status changes and other relevant information.
 
-2. Order Placement: Place orders for medications directly from the mobile app, reducing the need for in-person visits to the health facility.
+Installation
 
-3. Order History: View comprehensive order history to track past medication purchases and manage prescriptions efficiently.
+1. Clone the repository to your local machine:
 
-4. Push Notifications: Receive real-time notifications for order confirmations, payment status updates, and collection instructions.
-
-5. Secure Payments: Utilize secure payment integration, ensuring the safety and confidentiality of payment transactions.
-
----
-
-Technologies Used:
-
-- Backend: Node.js with Express.js framework for API development.
-- Database: Microsoft SQL Server for robust data storage and management.
-- Mobile App: Developed using Flutter framework for cross-platform compatibility and seamless user experience.
-- Push Notifications: Integrated Firebase Cloud Messaging (FCM) for efficient and reliable push notification delivery.
-- Payment Integration: Utilized Stripe API for secure online payment processing.
-
----
-
-Installation and Setup:
-
-1. Clone the backend repository to your local machine:
-   ```bash
-   git clone <backend_repository_url>
+   ```
+   git clone https://github.com/your_username/utibu-health-mobile.git
    ```
 
-2. Navigate to the backend directory and install dependencies:
-   ```bash
-   cd backend
+2. Navigate to the project directory:
+
+   ```
+   cd utibu-health-mobile
+   ```
+
+3. Install dependencies:
+
+   ```
    npm install
    ```
 
-3. Update the `config.js` file with your Microsoft SQL Server database connection details.
+4. Start the Metro bundler:
 
-4. Start the backend server:
-   ```bash
-   npm start
+   ```
+   npx react-native start
    ```
 
-5. Clone the mobile app repository and navigate to the project directory.
+5. Run the application on your preferred platform:
 
-6. Run the Flutter project:
-   ```bash
-   flutter run
-   ```
+   - For iOS:
+     ```
+     npx react-native run-ios
+     ```
+   - For Android:
+     ```
+     npx react-native run-android
+     ```
 
----
+Technologies Used
 
-Contributing:
+- React Native
+- Express.js
+- MongoDB
+- Firebase Cloud Messaging (FCM)
 
-Contributions to the Utibu Health Mobile Ordering System are welcome! If you find any issues or have suggestions for improvements, please feel free to submit a pull request or open an issue on GitHub.
+Configuration
 
----
-
-License:
-
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
-
----
-
-Contact:
-
-For any inquiries or further assistance, please contact the project maintainer at [email@example.com](mailto:email@example.com).
-
----
-
-Thank you for using Utibu Health Mobile Ordering System!
-
-We hope this solution enhances your experience in managing your medication needs effectively. If you have any feedback or questions, don't hesitate to reach out.
+- Database Connection: Update the database connection settings in the server configuration file (`server/config.js`).
+- Firebase Cloud Messaging (FCM): Set up Firebase Cloud Messaging and update the server code with the necessary configurations for push notifications
