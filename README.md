@@ -1,58 +1,45 @@
-Utibu Health Mobile App
 
-Utibu Health is a mobile application designed to allow registered customers to conveniently order medication remotely from Utibu Health facilities. The app enables users to make medication orders, track order status, and view order history. It also provides notifications for important updates regarding orders.
+Utibu Health's requirements, I'd propose the following approach:
 
-Features
+1. Mobile App Development:
+   - Develop a mobile app for iOS and Android platforms that allows registered customers to:
+     - Log in securely.
+     - Browse medication inventory.
+     - Place orders for medication.
+     - View their order history and statements.
 
-- Medication Ordering: Users can easily place orders for their required medications through the app.
-- Order Tracking: Users can track the status of their medication orders and view their order history.
-- Notifications: Push notifications are sent to users to keep them updated on order status changes and other relevant information.
+2. Backend Development:
+   - Create a backend system that handles communication between the mobile app and the legacy database.
+   - Implement APIs for user authentication, medication inventory management, order placement, and statement retrieval.
 
-Installation
+3. Database Integration:
+   - Develop a module that synchronizes online orders with the legacy database in Microsoft SQL Server.
+   - Ensure data integrity and consistency between the online and offline systems.
 
-1. Clone the repository to your local machine:
+4. Real-time Stock Management:
+   - Implement a mechanism to update the stock levels in real-time as orders are placed and fulfilled.
+   - Provide notifications to users if certain medications are out of stock or low in quantity.
 
-   ```
-   git clone https://github.com/your_username/utibu-health-mobile.git
-   ```
+5. Communication Protocol:
+   - Use a secure communication protocol (e.g., HTTPS) for transmitting data between the mobile app and the backend server.
+   - Implement encryption for sensitive information such as user credentials and payment details.
 
-2. Navigate to the project directory:
+6. Offline Capabilities:
+   - Design the mobile app to have offline capabilities, allowing users to browse medication and place orders even without an internet connection.
+   - Sync offline data with the server once the connection is restored.
 
-   ```
-   cd utibu-health-mobile
-   ```
+7. Payment Integration:
+   - Integrating payment gateways to facilitate online payments securely.
+   - Allowing users to choose between immediate payment or payment at the point of collection.
 
-3. Install dependencies:
+8. User Notifications:
+   - Provide push notifications to users to notify them of order confirmation, payment status, and collection instructions.
 
-   ```
-   npm install
-   ```
+9. Security Measures:
+   - Implemention authentication and authorization mechanisms to ensure that only registered users can access the app and place orders.
+   - i will be providing egular updates and patches for the system to protect against security vulnerabilities.
 
-4. Start the Metro bundler:
+10. Testing and Deployment:
+    - Conducting thorough testing of the mobile app, backend system, and database integration to ensure reliability, scalability, and usability.
+    - Deploying the solution in stages, starting with a limited user base for testing before rolling out to all customers.
 
-   ```
-   npx react-native start
-   ```
-
-5. Run the application on your preferred platform:
-
-   - For iOS:
-     ```
-     npx react-native run-ios
-     ```
-   - For Android:
-     ```
-     npx react-native run-android
-     ```
-
-Technologies Used
-
-- React Native
-- Express.js
-- MongoDB
-- Firebase Cloud Messaging (FCM)
-
-Configuration
-
-- Database Connection: Update the database connection settings in the server configuration file (`server/config.js`).
-- Firebase Cloud Messaging (FCM): Set up Firebase Cloud Messaging and update the server code with the necessary configurations for push notifications
